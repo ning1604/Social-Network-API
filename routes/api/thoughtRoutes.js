@@ -29,13 +29,13 @@ router
 
 // /api/thoughts/:thoughtId/reactions
 router
-    .route(':thoughtId/reactions')
+    .route('/:thoughtId/reactions')
     // POST to create a reaction
     .post(createReaction);
 
 // /api/thoughts/:thoughtId/reactions/:reactionId
 router
-    .route(':thoughtId/reactions/:reactionId')
+    .route('/:thoughtId/reactions/:reactionId')
     // DELETE to delete reaction by its _id
     .delete(deleteReaction);
 

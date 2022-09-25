@@ -11,7 +11,7 @@ const {
 
 // /api/thoughts
 router
-    .router('/')
+    .route('/')
     // GET all thoughts
     .get(getThoughts)
     // POST a new thought
